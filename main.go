@@ -10,8 +10,8 @@ func main() {
 }
 
 func theDefaultGopher() {
-	//ตัวเล็กนำ = private function ใช้แค่ในไฟล์/package นี้
-	// TheDefaultGopher (ตัวใหญ่นำ = public function ให้คนอื่นเรียกใช้ได้)
+	//theDefaultGopher (ตัวเล็กนำ = private function ใช้แค่ในไฟล์/package นี้)
+	//TheDefaultGopher (ตัวใหญ่นำ = public function ให้คนอื่นเรียกใช้ได้)
 	var score int
 	var isPassed bool
 	var remark string
@@ -23,3 +23,4 @@ func theDefaultGopher() {
 	fmt.Println("Score: %d \nPassed: %t \nRemark: %q \n", score, isPassed, remark)
 	fmt.Println("Total: ", totalScore)
 }
+
