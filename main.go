@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	name := "Pongsapak"
@@ -8,6 +10,7 @@ func main() {
 	fmt.Printf("Name: %s\nAge: %d\n", name, age)
 	theDefaultGopher()
 	ifelse_stm()
+	rateMovie(10)
 }
 
 func theDefaultGopher() {
@@ -43,4 +46,19 @@ func ifelse_stm() {
 	}
 
 	fmt.Println(msg)
+}
+
+func rateMovie(score int) {
+	switch {
+	case score == 10:
+		fmt.Println("Masterpiece!")
+	case score >= 8 && score <= 9:
+		fmt.Println("Great movie")
+	case score >= 5 && score <= 7:
+		fmt.Println("Average")
+	case score < 5:
+		fmt.Println("Flop")
+	default:
+		fmt.Println("Invalid Score")
+	}
 }
